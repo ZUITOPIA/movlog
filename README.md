@@ -1,5 +1,7 @@
 # movlog
 
+> 영화 블로그
+
 - git branch 브랜치이름
 - git add 추가할것
 - git commit -m "커밋내용"
