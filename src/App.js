@@ -77,15 +77,13 @@ function App() {
   const [videoData, setVideoData] = useState(dummyVideoData);
 
   const handleLikeClick = (videoId) => {
-    setVideoData((prevVideoData) => {
-      return prevVideoData.map((video) => {
-        if (videoId === video.id) {
-          video.likeCount += 1;
-        }
-        return video;
-      });
-      // return prevVideoData;
+    const newVideoData = videoData.map((video) => {
+      if (videoId === video.id) {
+        video.likeCount += 1;
+      }
+      return video;
     });
+    setVideoData(newVideoData);
   };
 
   return (
